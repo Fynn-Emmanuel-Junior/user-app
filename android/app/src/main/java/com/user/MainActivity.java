@@ -3,6 +3,7 @@ package com.user;
 import android.os.Build;
 import android.os.Bundle;
 
+
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;
 import com.facebook.react.ReactRootView;
@@ -33,6 +34,11 @@ public class MainActivity extends ReactActivity {
     return new ReactActivityDelegateWrapper(this,
       new ReactActivityDelegate(this, getMainComponentName())
     );
+  }
+
+  @Override
+  protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(null);
   }
 
   /**
