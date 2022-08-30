@@ -4,9 +4,7 @@ import colors from '../config/colors';
 import { StatusBar } from 'expo-status-bar';
 
 
-
 function createAccount() {
-
     const [name,setName] = useState('');
     const [email,setEmail] = useState('');
     const { width, height } = useWindowDimensions();
